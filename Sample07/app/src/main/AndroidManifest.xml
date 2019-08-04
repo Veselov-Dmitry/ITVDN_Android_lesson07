@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.servicetest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ex01.MainActivity" />
+        <activity android:name=".ex02.MainActivity" />
+        <activity android:name=".ex03.MainActivity" />
+        <activity android:name=".ex04.MainActivity" />
+        <activity android:name=".ex05.MainActivity" />
+        <activity android:name=".ex06.MainActivity" />
+        <activity android:name=".ex07.MainActivity" />
+        <activity android:name=".ex08.MainActivity" />
+        <activity android:name=".ex09.MainActivity" />
+
+        <service android:name=".ex01.MyService" />
+        <service android:name=".ex02.MyServiceEx02"/>
+        <service android:name=".ex03.MyServiceEx03"/>
+        <service android:name=".ex04.MyServiceEx04"/>
+        <service android:name=".ex05.MyServiceEx05"/>
+        <service android:name=".ex06.MyServiceEx06"/>
+        <service android:name=".ex07.MyServiceEx07"/>
+        <service android:name=".ex08.MyServiceEx08"
+            android:process="my.service"/>
+        <service android:name=".ex09.MyServiceEx09"/>
+    </application>
+
+</manifest>
